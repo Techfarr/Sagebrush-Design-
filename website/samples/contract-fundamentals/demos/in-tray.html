@@ -1,0 +1,226 @@
+<!-- BUILD ==========================================================
+     M2 · In tray | engine v1.0 | 2026-09-08
+
+     Module 2 · Lesson 6 · BLOCK 28. One embed, one config.
+     Edit CONFIG only. If you edit anything below CONFIG, bump the
+     engine version above and re-paste the Rise block.
+     Six items arrive the way they do on the job (invoice line, email,
+     call, note). Open one, pick which of the four questions it is, or
+     None of these four. One attempt per item. Feedback per item.
+     When all six are answered a closing panel lists the decision each
+     one needs. Footer counts items answered (n of 6).
+     Recommended Rise embed height: 1000px desktop, or fit to content.
+     ================================================================ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Six issues from one week</title>
+<style>
+  :root{
+    --navy:#0A1E5A;--blue:#1B4DD8;--ink:#1C2233;--muted:#6B7280;
+    --line:#D8DCE8;--bg:#FFFFFF;--panel:#F5F7FC;--panelbd:#D9DFEA;
+    --ok-bg:#E8F5EE;--ok-bd:#BCE3CE;--ok-ink:#0B5537;
+    --no-bg:#FDF0E7;--no-bd:#F2CDB2;--no-ink:#7C3308;--radius:10px;
+    --font:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0;background:var(--bg)}
+  body{font-family:var(--font);color:var(--ink);-webkit-font-smoothing:antialiased}
+  .wrap{max-width:960px;margin:0 auto;padding:6px 4px 10px}
+  .panel{background:var(--panel);border:1px solid var(--panelbd);border-radius:12px;padding:20px 20px 0;overflow:hidden}
+  .head{text-align:center;font-size:20px;font-weight:800;color:var(--navy);margin:0 0 4px}
+  .lead{text-align:center;font-size:13.5px;color:var(--muted);margin:0 0 16px}
+
+  .tray{display:grid;grid-template-columns:260px 1fr;gap:14px;align-items:start}
+  @media (max-width:700px){.tray{grid-template-columns:1fr}}
+  .list{display:grid;gap:8px}
+  .row{background:#fff;border:1.5px solid var(--line);border-radius:8px;padding:10px 12px;text-align:left;font:inherit;cursor:pointer;color:var(--ink);display:flex;flex-direction:column;gap:3px}
+  .row:hover{border-color:#B9C0D4}
+  .row:focus-visible{outline:3px solid var(--blue);outline-offset:2px}
+  .row.on{border-color:var(--navy);border-width:2px}
+  .row .kind{font-size:10.5px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--blue)}
+  .row .from{font-size:13.5px;font-weight:700;color:var(--navy)}
+  .row .sub{font-size:12.5px;color:var(--muted)}
+  .row .state{font-size:10.5px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;margin-top:2px}
+  .row.ok .state{color:var(--ok-ink)} .row.no .state{color:var(--no-ink)}
+
+  .view{background:#fff;border:1.5px solid var(--line);border-radius:var(--radius);padding:16px 18px;min-height:220px}
+  .view .empty{color:var(--muted);font-size:14px}
+  .view .kind{font-size:11px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--blue)}
+  .view .from{font-size:15px;font-weight:800;color:var(--navy);margin:2px 0 10px}
+  .view .body{font-size:14.5px;line-height:1.55;white-space:pre-line;margin:0 0 14px;padding:12px 14px;background:var(--panel);border-radius:8px}
+  .ask{font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--blue);margin:0 0 8px}
+  .opts{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+  @media (max-width:520px){.opts{grid-template-columns:1fr}}
+  .opt{background:#fff;border:1.5px solid var(--line);border-radius:8px;padding:10px 12px;font:inherit;font-size:14px;font-weight:700;color:var(--navy);cursor:pointer;text-align:left}
+  .opt:hover{border-color:#B9C0D4}
+  .opt:focus-visible{outline:3px solid var(--blue);outline-offset:2px}
+  .opt.pick{background:var(--blue);border-color:var(--blue);color:#fff}
+  .opt.right{background:var(--ok-bg);border-color:var(--ok-bd);color:var(--ok-ink)}
+  .opt[disabled]{cursor:default}
+  .opt[disabled]:not(.pick):not(.right){opacity:.5}
+  .fb{display:none;margin-top:12px;border-radius:8px;padding:11px 13px;font-size:13.5px;line-height:1.5;border-top:3px solid transparent}
+  .fb.show{display:block}
+  .fb.ok{background:var(--ok-bg);border-top-color:var(--ok-bd);color:var(--ok-ink)}
+  .fb.no{background:var(--no-bg);border-top-color:var(--no-bd);color:var(--no-ink)}
+  .fb .tag{display:inline-block;font-size:11px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;border-radius:99px;padding:3px 9px;margin-bottom:6px}
+  .fb.ok .tag{background:#CBE8D8;color:var(--ok-ink)}
+  .fb.no .tag{background:#F7DAC4;color:var(--no-ink)}
+
+  .close{display:none;margin-top:16px;background:#fff;border:2px solid var(--navy);border-radius:var(--radius);padding:16px 18px}
+  .close.show{display:block}
+  .close h3{margin:0 0 10px;font-size:16px;color:var(--navy)}
+  .close dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:8px 14px;font-size:13.5px;line-height:1.5}
+  @media (max-width:520px){.close dl{grid-template-columns:1fr;gap:4px}}
+  .close dt{font-weight:800;color:var(--navy)}
+  .close dd{margin:0}
+  .close p{margin:12px 0 0;font-size:13.5px;line-height:1.5}
+
+  .foot{background:#152238;color:#fff;font-size:14px;font-weight:600;text-align:center;padding:12px 20px;margin:18px -20px 0}
+  @media (prefers-reduced-motion:reduce){*{transition:none !important}}
+</style>
+</head>
+<body>
+<div class="wrap" data-build="M2 · In tray | engine v1.0 | 2026-09-08">
+  <div class="panel">
+    <h2 class="head" id="head"></h2>
+    <p class="lead" id="lead"></p>
+    <div class="tray">
+      <div class="list" id="list"></div>
+      <div class="view" id="view"><p class="empty" id="empty"></p></div>
+    </div>
+    <div class="close" id="close"></div>
+    <div class="foot" id="foot"></div>
+  </div>
+</div>
+
+<script>
+/* ===== CONFIG · edit this block only ===== */
+var CONFIG = {
+  head: "Six issues from one week",
+  lead: "They came in as invoice lines, emails, a call and a note. Open each one and name the question it is asking. One attempt each.",
+  empty: "Select an item on the left to open it.",
+  ask: "Which question is this?",
+  foot: "Answer all six before you move on.",
+  footProgress: "Answered {n} of 6. Answer all six before you move on.",
+  footDone: "All six answered. Read the summary, then continue to the next screen.",
+  options: ["Was it agreed for this event?", "Who pays for it?", "Is it theirs to fix?", "Who had the aircraft?", "None of these four"],
+  items: [
+    { kind: "Invoice line", from: "Northline Aero Services final invoice, aircraft 4821", sub: "Labor line, Fixed Price",
+      body: "Line 14. Fixed Price labor. The same line, same description and same amount, is on the Event Price Sheet for this event.",
+      answer: 0,
+      ok: "Was it agreed for this event. A line on both documents was agreed and paid for once already. Compare the Event Price Sheet against the invoice. No clause is needed.",
+      no: "Was it agreed for this event. Two documents disagree about what was already bought. You settle that by comparing them, not by reading a clause." },
+    { kind: "Invoice line", from: "Northline Aero Services final invoice, aircraft 6042", sub: "34 hours time-and-materials",
+      body: "line 0412. 34 hours time-and-materials. Classified as added work off a core task. The core task on the Event Scope tab carries a coverage ratio.",
+      answer: 1,
+      ok: "Who pays for it. The work was done and it is in scope. The question is whether the fixed price already covers it, and that means reading the pricing clause.",
+      no: "Who pays for it. The work happened and nobody disputes that. The question is how it is charged, and that is decided by the pricing clause, not by comparing documents." },
+    { kind: "Email", from: "Maintenance Control", sub: "aircraft 7314, found in service",
+      body: "aircraft 7314 came back from the heavy visit last week. On the overnight check the crew found loose ducts and missing clamps in the area Northline Aero Services worked. Photos attached. What do you want us to do with this?",
+      answer: 2,
+      ok: "Is it theirs to fix. Work Northline Aero Services did fell short of the standard and the defect showed up after re-delivery. Document it now and route it. You do not decide eligibility.",
+      no: "Is it theirs to fix. Nothing was lost or damaged while Northline Aero Services had the aircraft. The work itself fell short of the standard. That is warranty, and the notification clock is running." },
+    { kind: "Call from the floor", from: "Floor lead, Mesa station", sub: "Panel missing after release",
+      body: "\"We have a panel missing on the aircraft that released yesterday. Nobody can tell me yet whether it was missing before or after re-delivery. Who owns this?\"",
+      answer: 3,
+      ok: "Who had the aircraft. Something happened to the aircraft and the question is who was responsible at the time. Say the timing is unknown when you route it.",
+      no: "Who had the aircraft. No work fell short of a standard here. Something happened to the aircraft, and the timing decides who is responsible. That is custody." },
+    { kind: "Email", from: "Northline Aero Services program manager", sub: "Work package, span relief",
+      body: "the airline's routine work package for this check arrived four days after the aircraft did. That cost us days on the floor. We are requesting span relief for the event.",
+      answer: 4,
+      ok: "None of these four. This is a real contract issue. The agreement says when the airline provides the work package and what happens when it is late. It is a work package timing and delay question. Name it as that and route it to Commercial Support.",
+      no: "None of these four. It is a real contract issue, but it is not one of the four topics in this course. A late work package is a work package timing and delay question. Name it as that and route it to Commercial Support." },
+    { kind: "Note", from: "the airline on-site rep", sub: "Added work approved on site",
+      body: "Northline Aero Services found a discrepancy outside the work package. I approved the added work on site to keep the check moving. We did not settle how it would be charged.",
+      answer: 4,
+      ok: "None of these four. Work was approved to keep the check moving and the commercial treatment was left open. That is an approval authority question. Name it as that and route it to Commercial Support.",
+      no: "None of these four. The approval was operational, not commercial, and the treatment was never settled. That is an approval authority question, not one of the four. Name it as that and route it to Commercial Support." }
+  ],
+  closeHead: "What that showed",
+  closeRows: [
+    ["Invoice line, aircraft 4821", "Was it agreed for this event? Decide whether the work is in the agreed event scope or needs separate treatment."],
+    ["Invoice line, aircraft 6042", "Who pays for it? Decide whether the work is included, excluded, separately billable, or subject to time-and-materials."],
+    ["Email, aircraft 7314", "Is it theirs to fix? Decide whether to document the issue and route it for warranty review. You do not decide eligibility."],
+    ["Call, missing panel", "Who had the aircraft? Establish whether it happened before, during, or after the responsibility transfer point."],
+    ["Email, span relief", "None of these four. Work package timing and delay. Route it to Commercial Support."],
+    ["Note, on-site approval", "None of these four. Approval authority. Route it to Commercial Support."]
+  ],
+  closeText: "The next module takes several of these issue types deeper by placing the relevant documents and governing language in front of the learner. The point here is classification first: name the question before trying to solve it."
+};
+/* ===== end CONFIG ===== */
+
+(function(){
+  document.getElementById('head').textContent = CONFIG.head;
+  document.getElementById('lead').textContent = CONFIG.lead;
+  document.getElementById('empty').textContent = CONFIG.empty;
+  var foot = document.getElementById('foot'); foot.textContent = CONFIG.foot;
+  var list = document.getElementById('list'), view = document.getElementById('view');
+  var state = CONFIG.items.map(function(){ return { done:false, pick:-1 }; });
+  var rows = [], open = -1, done = 0;
+
+  CONFIG.items.forEach(function(it, i){
+    var b = document.createElement('button'); b.type='button'; b.className='row';
+    b.innerHTML = '<span class="kind"></span><span class="from"></span><span class="sub"></span><span class="state"></span>';
+    b.querySelector('.kind').textContent = it.kind;
+    b.querySelector('.from').textContent = it.from;
+    b.querySelector('.sub').textContent = it.sub;
+    b.addEventListener('click', function(){ show(i); });
+    list.appendChild(b); rows.push(b);
+  });
+
+  function show(i){
+    open = i; rows.forEach(function(r,k){ r.classList.toggle('on', k===i); });
+    var it = CONFIG.items[i], st = state[i];
+    view.innerHTML = '<div class="kind"></div><div class="from"></div><p class="body"></p><p class="ask"></p><div class="opts"></div><div class="fb"></div>';
+    view.querySelector('.kind').textContent = it.kind;
+    view.querySelector('.from').textContent = it.from;
+    view.querySelector('.body').textContent = it.body;
+    view.querySelector('.ask').textContent = CONFIG.ask;
+    var opts = view.querySelector('.opts'), fb = view.querySelector('.fb');
+    CONFIG.options.forEach(function(label, k){
+      var o = document.createElement('button'); o.type='button'; o.className='opt'; o.textContent = label;
+      if (st.done){ o.disabled = true; if (k===it.answer) o.classList.add('right'); else if (k===st.pick) o.classList.add('pick'); }
+      o.addEventListener('click', function(){ answer(i, k); });
+      opts.appendChild(o);
+    });
+    if (st.done) renderFb(fb, it, st.pick===it.answer);
+  }
+
+  function renderFb(fb, it, right){
+    fb.className = 'fb show ' + (right ? 'ok' : 'no');
+    fb.innerHTML = '<span class="tag"></span><div></div>';
+    fb.querySelector('.tag').textContent = right ? 'Correct' : 'Not this one';
+    fb.querySelector('div').textContent = right ? it.ok : it.no;
+  }
+
+  function answer(i, k){
+    var it = CONFIG.items[i], st = state[i];
+    if (st.done) return;
+    st.done = true; st.pick = k; done++;
+    var right = (k === it.answer);
+    rows[i].classList.add(right ? 'ok' : 'no');
+    rows[i].querySelector('.state').textContent = right ? 'Correct' : 'Missed';
+    show(i);
+    foot.textContent = (done === CONFIG.items.length) ? CONFIG.footDone : CONFIG.footProgress.replace('{n}', done);
+    if (done === CONFIG.items.length) closeOut();
+  }
+
+  function closeOut(){
+    var c = document.getElementById('close');
+    c.innerHTML = '<h3></h3><dl></dl><p></p>';
+    c.querySelector('h3').textContent = CONFIG.closeHead;
+    var dl = c.querySelector('dl');
+    CONFIG.closeRows.forEach(function(r){
+      var dt = document.createElement('dt'), dd = document.createElement('dd');
+      dt.textContent = r[0]; dd.textContent = r[1]; dl.appendChild(dt); dl.appendChild(dd);
+    });
+    c.querySelector('p').textContent = CONFIG.closeText;
+    c.className = 'close show';
+  }
+})();
+</script>
+</body>
+</html>

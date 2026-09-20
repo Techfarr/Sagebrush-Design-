@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Work — Sagebrush Design</title>
+<meta name="description" content="Selected work by Sagebrush Design: learning strategy, project recovery, digital learning, agriculture, and systems — shaped by the problem, not the format.">
+<link rel="icon" href="assets/logo/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/site.css">
+<meta property="og:title" content="Work — Sagebrush Design">
+<meta property="og:description" content="Selected work by Sagebrush Design: learning strategy, project recovery, digital learning, agriculture, and systems — shaped by the problem, not the format.">
+<meta property="og:type" content="website">
+</head>
+<body>
+<a href="#main" class="skip" style="position:absolute;left:-999px;top:8px;background:#F7F0E5;color:#2B3430;padding:8px 12px;z-index:20" onfocus="this.style.left='8px'" onblur="this.style.left='-999px'">Skip to content</a>
+<header class="site-header">
+  <nav aria-label="Primary">
+    <a class="brand" href="index.html" aria-label="Sagebrush Design — home">
+      <img src="assets/logo/header-stacked-light.png" alt="Sagebrush Design &amp; Consulting" width="110" height="72">
+    </a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="work.html" aria-current="page">Work</a>
+      <a class="nav-cta" href="index.html#contact" data-track-contact="nav-work">Discuss a Project</a>
+    </div>
+  </nav>
+</header>
+
+<main id="main">
+  <section class="wrap work-intro" aria-labelledby="work-h">
+    <div class="head">
+      <p class="eyebrow">Selected work</p>
+      <h1 id="work-h" class="h1">Work shaped by the problem, not the format.</h1>
+      <p class="lede">The common thread is not a tool. Sagebrush Design starts with the problem, then builds the learning, workflow, system, or project structure the work requires.</p>
+    </div>
+    <div id="filters" class="filters" role="group" aria-label="Filter projects by problem type" hidden></div>
+  </section>
+
+  <div id="featured-rows"></div>
+
+  <section id="no-results" class="wrap empty" hidden><p>No projects in this category yet. <button type="button" data-filter="All">Show all work</button></p></section>
+
+  <section id="more-work" class="wrap more" aria-labelledby="more-h">
+    <div class="head">
+      <p class="eyebrow">More work</p>
+      <h2 id="more-h" class="h2-md">Breadth beyond the featured cases.</h2>
+    </div>
+    <div id="supporting-cards" class="cols3"></div>
+  </section>
+
+  <section class="closing" aria-labelledby="closing-h">
+    <div class="wrap">
+      <div class="formats">
+        <p class="eyebrow">Formats across this work</p>
+        <div id="modalities" class="tags"></div>
+      </div>
+      <div class="ask">
+        <h2 id="closing-h" class="h2">Have a problem that looks like one of these?</h2>
+        <div><a class="btn" href="index.html#contact" data-track-contact="work-closing">Discuss a Project</a></div>
+      </div>
+    </div>
+  </section>
+
+  <dialog id="case-dialog" class="sheet" aria-labelledby="case-title">
+    <article class="cs">
+      <div class="dlg-top"><span class="dlg-label" data-cs-label></span><button type="button" class="dlg-close" aria-label="Close case study">×</button></div>
+      <h2 id="case-title"></h2>
+      <section><h3>Challenge</h3><p data-cs-challenge></p></section>
+      <div class="two">
+        <section><h3>My role</h3><ul class="bullets bullets-sm" data-cs-role></ul></section>
+        <section><h3>Key decisions</h3><ol data-cs-decisions></ol></section>
+      </div>
+      <section><h3>Evidence</h3><div class="ev-grid" data-cs-evidence></div></section>
+      <section class="outcome"><h3>Outcome / validation</h3><ul class="bullets bullets-sm" data-cs-outcome></ul></section>
+      <div class="actions">
+        <a class="btn btn-ink" href="index.html#contact" data-track-contact="case-study">Discuss a Project</a>
+        <a class="link-u" href="#" data-cs-sample hidden>Explore portfolio sample&nbsp;→</a>
+        <a class="link-u" href="#" target="_blank" rel="noopener" data-cs-live hidden>View live site&nbsp;↗</a>
+      </div>
+    </article>
+  </dialog>
+  
+<dialog id="evidence-dialog" class="sheet sheet-wide ev" aria-labelledby="ev-title">
+  <div class="dlg-top"><span class="dlg-label" data-ev-label></span><button type="button" class="dlg-close" aria-label="Close">×</button></div>
+  <h2 id="ev-title"></h2>
+  <div data-ev-body>
+    <div class="media" data-ev-media></div>
+    <div class="cols">
+      <div><span class="ev-h">What you’re seeing</span><p data-ev-seeing></p></div>
+      <div><span class="ev-h">Why it was designed this way</span><p data-ev-why></p></div>
+      <div data-ev-demonstrates-wrap hidden><span class="ev-h">What it demonstrates</span><p data-ev-demonstrates></p></div>
+    </div>
+  </div>
+</dialog>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-brand"><img src="assets/logo/footer-stacked-ink.webp" alt="Sagebrush Design &amp; Consulting" width="300" height="200"></div>
+    <p>© 2026 Sagebrush Design &amp; Consulting</p>
+    <nav aria-label="Footer"><a href="index.html">Home</a><a href="index.html#contact" data-track-contact="footer-work">Contact</a></nav>
+  </div>
+</footer>
+<script type="module" src="js/work.js"></script>
+</body>
+</html>
