@@ -46,7 +46,7 @@ export const projects = [
     ],
     outcome: [
       "Post-session survey (14 responses): 14/14 strongly agreed the training was relevant to their role and increased knowledge or skills for the job; 13/14 agreed or strongly agreed they intended to apply it within 30 days.",
-      "Early post-launch feedback described the facilitated experience as an "awesome experience," and another internal learning team requested the program as a reference while developing a similar investigation curriculum.",
+      "Early post-launch feedback described the facilitated experience as an \"awesome experience,\" and another internal learning team requested the program as a reference while developing a similar investigation curriculum.",
       "These results support learner reaction, confidence, intent to apply, and implementation decisions; operational investigation-quality outcomes have not been measured."
     ],
     survey: {
@@ -77,7 +77,7 @@ export const projects = [
         seeing: "The validation section separates learner reaction, confidence, intent to apply, and implementation evidence from operational outcomes that were not measured.",
         why: "The case study should demonstrate impact without overstating it. The evidence boundary keeps the public claim aligned with the data that actually exists." }
     ],
-    validation: { label: "Verified learner response", text: "In a 14-response post-session survey, every respondent strongly agreed the training was relevant and increased knowledge or skills for the job. Early post-launch feedback also described the facilitated session as an "awesome experience."", attribution: "Post-session survey and anonymized operational feedback", quote: false },
+    validation: { label: "Verified learner response", text: "In a 14-response post-session survey, every respondent strongly agreed the training was relevant and increased knowledge or skills for the job. Early post-launch feedback also described the facilitated session as an \"awesome experience.\"", attribution: "Post-session survey and anonymized operational feedback", quote: false },
     portfolioUrl: "samples/safety-investigations/index.html",
     externalUrl: "",
     theme: "ink",
