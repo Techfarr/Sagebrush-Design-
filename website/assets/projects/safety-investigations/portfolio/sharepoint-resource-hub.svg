@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900">
+<rect width="1400" height="900" fill="#F4F4F2"/>
+<!-- generic intranet header -->
+<rect x="0" y="0" width="1400" height="54" fill="#2B3430"/>
+<text x="42" y="34" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="700" fill="#FFFFFF">Safety Investigation Resources</text>
+<rect x="0" y="54" width="1400" height="72" fill="#FFFFFF"/>
+<text x="42" y="98" font-family="Arial,Helvetica,sans-serif" font-size="27" font-weight="700" fill="#2B3430">Evidence Site</text>
+<text x="1250" y="96" text-anchor="end" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#71806C">View-only resource environment</text>
+
+<!-- evidence-category navigation -->
+<rect x="42" y="150" width="1316" height="66" fill="#FFFFFF" stroke="#D5CCBE"/>
+<g font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="700">
+<rect x="58" y="164" width="212" height="38" fill="#5E6D59"/><text x="164" y="188" text-anchor="middle" fill="#FFFFFF">Physical Evidence</text>
+<text x="390" y="188" text-anchor="middle" fill="#52615A">Digital Evidence</text>
+<text x="638" y="188" text-anchor="middle" fill="#52615A">Documentary Evidence</text>
+<text x="905" y="188" text-anchor="middle" fill="#52615A">Environmental Evidence</text>
+<text x="1210" y="188" text-anchor="middle" fill="#52615A">Reference</text>
+</g>
+
+<!-- page intro -->
+<text x="58" y="270" font-family="Arial,Helvetica,sans-serif" font-size="31" font-weight="700" fill="#2B3430">Physical Evidence</text>
+<text x="58" y="302" font-family="Arial,Helvetica,sans-serif" font-size="15" fill="#52615A">Use the evidence to document what you can verify. Keep unanswered questions visible.</text>
+
+<!-- thought-process cards -->
+<rect x="58" y="340" width="385" height="235" fill="#FFFFFF" stroke="#D5CCBE"/>
+<rect x="58" y="340" width="385" height="44" fill="#5E6D59"/>
+<text x="80" y="368" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="700" fill="#FFFFFF">Scene photographs</text>
+<rect x="78" y="405" width="91" height="28" rx="14" fill="#DDE7DA"/>
+<text x="124" y="424" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="11" font-weight="700" fill="#496047">VERIFIED</text>
+<text x="78" y="470" font-family="Arial,Helvetica,sans-serif" font-size="14" fill="#2B3430">Review what the photographs show.</text>
+<text x="78" y="497" font-family="Arial,Helvetica,sans-serif" font-size="14" fill="#2B3430">Separate observation from interpretation.</text>
+<rect x="78" y="524" width="345" height="34" fill="#E7D4AE"/>
+<text x="92" y="546" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="700" fill="#6B4F24">NOT YET KNOWN: what happened outside the frame?</text>
+
+<rect x="465" y="340" width="385" height="235" fill="#FFFFFF" stroke="#D5CCBE"/>
+<rect x="465" y="340" width="385" height="44" fill="#5E6D59"/>
+<text x="487" y="368" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="700" fill="#FFFFFF">Ramp diagram</text>
+<rect x="485" y="405" width="91" height="28" rx="14" fill="#DDE7DA"/>
+<text x="531" y="424" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="11" font-weight="700" fill="#496047">VERIFIED</text>
+<text x="485" y="470" font-family="Arial,Helvetica,sans-serif" font-size="14" fill="#2B3430">Compare the diagram with the photographs.</text>
+<text x="485" y="497" font-family="Arial,Helvetica,sans-serif" font-size="14" fill="#2B3430">Record where the evidence agrees.</text>
+<rect x="485" y="524" width="345" height="34" fill="#E7D4AE"/>
+<text x="499" y="546" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="700" fill="#6B4F24">NOT YET KNOWN: what remains unanswered?</text>
+
+<rect x="872" y="340" width="486" height="235" fill="#FFFFFF" stroke="#D5CCBE"/>
+<rect x="872" y="340" width="486" height="44" fill="#5E6D59"/>
+<text x="894" y="368" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="700" fill="#FFFFFF">Evidence questions</text>
+<text x="894" y="420" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="700" fill="#2B3430">What does this evidence establish?</text>
+<text x="894" y="453" font-family="Arial,Helvetica,sans-serif" font-size="14" fill="#52615A">What does it not establish?</text>
+<text x="894" y="486" font-family="Arial,Helvetica,sans-serif" font-size="14" fill="#52615A">What should the group look for next?</text>
+<text x="894" y="519" font-family="Arial,Helvetica,sans-serif" font-size="14" fill="#52615A">What could change the current interpretation?</text>
+
+<!-- separate downloads / reference web part -->
+<text x="58" y="642" font-family="Arial,Helvetica,sans-serif" font-size="23" font-weight="700" fill="#2B3430">Downloads &amp; Reference</text>
+<text x="58" y="669" font-family="Arial,Helvetica,sans-serif" font-size="14" fill="#52615A">Performance support is kept separate from the evidence-thinking content.</text>
+
+<g>
+<rect x="58" y="704" width="294" height="124" fill="#FFFFFF" stroke="#D5CCBE"/>
+<rect x="58" y="704" width="8" height="124" fill="#B86448"/>
+<text x="84" y="742" font-family="Arial,Helvetica,sans-serif" font-size="16" font-weight="700" fill="#2B3430">Print Packet</text>
+<text x="84" y="771" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#52615A">Quick reference + SHIELD job aids</text>
+<text x="84" y="801" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="700" fill="#B86448">OPEN RESOURCE</text>
+
+<rect x="372" y="704" width="294" height="124" fill="#FFFFFF" stroke="#D5CCBE"/>
+<rect x="372" y="704" width="8" height="124" fill="#71806C"/>
+<text x="398" y="742" font-family="Arial,Helvetica,sans-serif" font-size="16" font-weight="700" fill="#2B3430">First Hour Checklist</text>
+<text x="398" y="771" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#52615A">Stable first-response support</text>
+<text x="398" y="801" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="700" fill="#71806C">OPEN RESOURCE</text>
+
+<rect x="686" y="704" width="322" height="124" fill="#FFFFFF" stroke="#D5CCBE"/>
+<rect x="686" y="704" width="8" height="124" fill="#71806C"/>
+<text x="712" y="742" font-family="Arial,Helvetica,sans-serif" font-size="16" font-weight="700" fill="#2B3430">Instant Report Template</text>
+<text x="712" y="771" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#52615A">Facts-only initial communication</text>
+<text x="712" y="801" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="700" fill="#71806C">OPEN RESOURCE</text>
+
+<rect x="1028" y="704" width="330" height="124" fill="#FFFFFF" stroke="#D5CCBE"/>
+<rect x="1028" y="704" width="8" height="124" fill="#71806C"/>
+<text x="1054" y="742" font-family="Arial,Helvetica,sans-serif" font-size="16" font-weight="700" fill="#2B3430">Scene Checklist + Kit</text>
+<text x="1054" y="771" font-family="Arial,Helvetica,sans-serif" font-size="13" fill="#52615A">Single-page field reference</text>
+<text x="1054" y="801" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="700" fill="#71806C">OPEN RESOURCE</text>
+</g>
+</svg>
