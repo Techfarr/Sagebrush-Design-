@@ -274,3 +274,15 @@ dialog::backdrop{background:rgba(31,40,37,.78)}
   .validation .act{justify-content:start}
 }
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none !important;animation:none !important}}
+
+/* Safety artwork: equal frames, full compositions, aligned captions. */
+#featured .ecard:has(img[src*="/safety-investigations/approved/"]) .media,
+#work-safety-investigations .mini .media,
+#case-dialog .ev-card:has(img[src*="/safety-investigations/approved/"]) .media{
+  height:auto;aspect-ratio:4/3;background:#fff;
+}
+#featured .ecard:has(img[src*="/safety-investigations/approved/"]) .media img,
+#work-safety-investigations .media img,
+#case-dialog .ev-card img[src*="/safety-investigations/approved/"]{object-fit:contain;object-position:center}
+#featured .ecard:has(img[src*="/safety-investigations/approved/"]){grid-template-rows:auto 1fr}
+#featured .ecard:has(img[src*="/safety-investigations/approved/"]) .body{grid-template-rows:auto auto 1fr auto}
