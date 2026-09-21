@@ -547,18 +547,18 @@ Launch only after Samantha approves:
 | H-01 | Home hero | LOCKED | No redesign. |
 | H-02 | Home proof stats | REVIEW NEEDED | Claim/source check. |
 | H-03 | Problems section | LOCKED | Copy QA later. |
-| H-04 | Featured Work | IN PROGRESS | Restore/verify three distinct authentic Safety visuals. |
+| H-04 | Featured Work | REVIEW NEEDED | Three distinct source-faithful Safety visuals are now in place: Rise, ILT, and QRG. Samantha review required. |
 | H-05 | Agriculture | REVIEW NEEDED | Visual/copy review later. |
 | H-06 | Process | LOCKED | Copy QA later. |
 | H-07 | About | INCOMPLETE | Add real working-context portrait. |
 | H-08 | Contact | BLOCKED | Connect real HubSpot form. |
 | W-01 | Work page structure | REVIEW NEEDED | Simplify project actions and increase visible proof. |
-| W-02 | Safety on Work | IN PROGRESS | Authentic sanitized imagery. |
+| W-02 | Safety on Work | REVIEW NEEDED | Work page now inherits the source-faithful Rise, ILT, and QRG evidence set. |
 | W-03 | Project Recovery on Work | NOT STARTED | Build honest process visual. |
 | W-04 | Contract on Work | NOT STARTED | Use interaction captures. |
 | W-05 | Ag Dirt Busters on Work | BLOCKED | Wait for product refresh. |
 | W-06 | Supporting projects | NOT STARTED | VA, NERC, healthcare concise treatments. |
-| P-01 | Safety sample | IN PROGRESS | Fidelity + visual balance review. |
+| P-01 | Safety sample | REVIEW NEEDED | Rebuilt around three faithful deliverable reconstructions; fake browser framing and generic portfolio art removed. |
 | P-02 | Contract sample | REVIEW NEEDED | More visual, less explanatory text. |
 | P-03 | Recovery sample | REVIEW NEEDED | Reduce prose and add process visuals. |
 | P-04 | Ag Dirt Busters sample | BLOCKED | Wait for refreshed product. |
@@ -638,20 +638,16 @@ Do not implement these during the rebuild unless Samantha explicitly promotes on
 
 ## 10. Immediate Next Task
 
-**Current task: H-04 + P-01 — Safety Investigations visual fidelity and Featured Work completion.**
+**Current review gate: H-04 + W-02 + P-01 — Safety Investigations visual fidelity and Featured Work completion.**
 
-Work sequence:
-1. Compare every visible Safety portfolio image to the actual/reference deliverable.
-2. Identify which images are faithful enough to keep.
-3. Replace or rebuild only the images that are not faithful.
-4. Ensure homepage Featured Work shows three different parts of the learning system:
-   - eLearning.
-   - facilitated/ILT.
-   - QRG/SHIELD/performance support.
-5. Keep validation separate.
-6. Review Home and Safety sample together for image repetition.
-7. Present the completed Safety set to Samantha for approval.
-8. Only after Safety is approved, move to Contract Fundamentals.
+Review sequence:
+1. Samantha reviews the three Safety representations together on Home, Work, and the Safety sample.
+2. Confirm the Rise reconstruction still looks like the real Rise interaction.
+3. Confirm the ILT Reframe preserves the actual delivered slide hierarchy without exposing the real incident.
+4. Confirm the QRG preserves the document structure without exposing internal procedures.
+5. Confirm the three visuals are distinct enough and do not feel repetitive.
+6. Correct only issues Samantha identifies in this Safety review.
+7. Once Samantha approves Safety, move to Contract Fundamentals.
 
 ---
 
