@@ -5,12 +5,13 @@ import { esc, media, openEvidence, wireCommon } from "./ui.js";
 
 const f = byId(homepageFeaturedId) || projects[0];
 const root = document.getElementById("featured");
+const homeProject = f.homeImages ? { ...f, evidence: f.evidence.map((e, i) => ({ ...e, ...f.homeImages[i] })) } : f;
 
 root.querySelector("[data-f-context]").textContent = f.context;
 root.querySelector("[data-f-problem]").textContent = f.problem;
 root.querySelector("[data-f-summary]").textContent = f.summary;
 root.querySelector("[data-f-tags]").innerHTML = f.tags.map(t => `<span class="tag">${esc(t)}</span>`).join("");
-root.querySelector("[data-f-evidence]").innerHTML = f.evidence.map((e, i) => `
+root.querySelector("[data-f-evidence]").innerHTML = homeProject.evidence.map((e, i) => `
   <button type="button" class="ecard" data-index="${i}" aria-haspopup="dialog">
     ${media(e, e.title + " — screenshot")}
     <span class="body">
@@ -20,7 +21,7 @@ root.querySelector("[data-f-evidence]").innerHTML = f.evidence.map((e, i) => `
       <span class="more">View evidence&nbsp;→</span>
     </span>
   </button>`).join("");
-root.querySelectorAll(".ecard").forEach(b => b.addEventListener("click", () => openEvidence(f, Number(b.dataset.index), b)));
+root.querySelectorAll(".ecard").forEach(b => b.addEventListener("click", () => openEvidence(homeProject, Number(b.dataset.index), b)));
 
 const v = root.querySelector("[data-f-validation]");
 if (f.validation) {
