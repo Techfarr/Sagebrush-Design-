@@ -260,6 +260,16 @@ dialog::backdrop{background:rgba(31,40,37,.78)}
 .empty button{background:none;border:0;padding:0;font-weight:600;color:var(--clay-deep);border-bottom:2px solid var(--clay-deep)}
 [hidden]{display:none !important}
 
+/* Approved Featured Work card rule — local-first review 2026-09-21.
+   Comparable evidence cards use equal outer heights and equal artifact stages.
+   Deliverables keep their native proportions inside the stage; do not crop or stretch them. */
+.featured .cols3{gap:20px;align-items:stretch}
+.ecard{grid-template-rows:210px 245px;align-self:stretch;height:455px}
+.ecard .media{height:210px;display:flex;align-items:center;justify-content:center;padding:12px;background:var(--sand)}
+.ecard .media img,.ecard .media.contain img{position:static;inset:auto;width:auto;height:auto;max-width:94%;max-height:186px;object-fit:contain;padding:0;box-shadow:0 5px 16px rgba(31,40,37,.18);background:#fff}
+.ecard .body{height:245px;padding:22px 22px 20px;display:grid;grid-template-rows:auto auto 1fr auto;gap:10px}
+.ecard .more{margin-top:0;align-self:end}
+
 /* Breakpoints */
 @media (max-width:960px){.nav-links a:not(.nav-cta){display:none}}
 @media (max-width:1100px){.adb{grid-template-columns:minmax(0,1fr)}.adb-text{padding:0 22px 22px}.adb .media{min-height:180px}}
@@ -267,6 +277,8 @@ dialog::backdrop{background:rgba(31,40,37,.78)}
 @media (max-width:900px){.feature article{grid-template-columns:minmax(0,1fr)}.feature .story,.feature .visual{grid-column:auto;grid-row:auto}}
 @media (max-width:760px){
   .nav-links a:not(.nav-cta){display:none}
+  .ecard{height:auto;grid-template-rows:210px auto}
+  .ecard .body{height:auto;min-height:220px}
   .brand img{height:52px;width:80px}
   .nav-cta{padding:10px 14px;font-size:15px}
   .cols3,.steps,.cs .two,.cs .ev-grid{grid-template-columns:minmax(0,1fr)}
