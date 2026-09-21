@@ -125,13 +125,13 @@ dialog::backdrop{background:rgba(31,40,37,.78)}
 .problem p{position:relative;text-wrap:pretty;font-size:18px;line-height:1.6}
 .featured{background:var(--ink);color:var(--cream)}
 .featured .wrap{padding-top:64px;padding-bottom:104px;display:grid;gap:48px}
-.featured-head{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:40px;align-items:end}
+.featured-head{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:40px;align-items:start}
 .featured-head .eyebrow{color:var(--sand)}
 .featured-head .sub{display:grid;gap:22px}
 .featured-head .sub p{font-size:19px;line-height:1.6;color:var(--sand);text-wrap:pretty}
 .featured .tag{border-color:rgba(247,240,229,.4);color:var(--cream)}
-.featured .cols3{gap:20px}
-.ecard{display:grid;background:var(--cream);color:var(--ink);cursor:pointer;text-align:left;border:0;padding:0;font:inherit}
+.featured .cols3{gap:20px;align-items:start}
+.ecard{display:grid;background:var(--cream);color:var(--ink);cursor:pointer;text-align:left;border:0;padding:0;font:inherit;align-self:start;height:auto}
 .ecard:hover{box-shadow:0 0 0 3px var(--clay)}
 .ecard .media{height:240px}
 .ecard .body{padding:26px;display:grid;gap:10px}
