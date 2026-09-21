@@ -558,7 +558,7 @@ Launch only after Samantha approves:
 | W-04 | Contract on Work | NOT STARTED | Use interaction captures. |
 | W-05 | Ag Dirt Busters on Work | BLOCKED | Wait for product refresh. |
 | W-06 | Supporting projects | NOT STARTED | VA, NERC, healthcare concise treatments. |
-| P-01 | Safety sample | REVIEW NEEDED | Rebuilt around three faithful deliverable reconstructions; fake browser framing and generic portfolio art removed. |
+| P-01 | Safety sample | REVIEW NEEDED | Rebuilt around faithful Rise, ILT, QRG, learner worksheet, and SharePoint/resource-environment evidence; fake browser framing and generic portfolio art removed. |
 | P-02 | Contract sample | REVIEW NEEDED | More visual, less explanatory text. |
 | P-03 | Recovery sample | REVIEW NEEDED | Reduce prose and add process visuals. |
 | P-04 | Ag Dirt Busters sample | BLOCKED | Wait for refreshed product. |
@@ -645,9 +645,11 @@ Review sequence:
 2. Confirm the Rise reconstruction still looks like the real Rise interaction.
 3. Confirm the ILT Reframe preserves the actual delivered slide hierarchy without exposing the real incident.
 4. Confirm the QRG preserves the document structure without exposing internal procedures.
-5. Confirm the three visuals are distinct enough and do not feel repetitive.
-6. Correct only issues Samantha identifies in this Safety review.
-7. Once Samantha approves Safety, move to Contract Fundamentals.
+5. Confirm the learner worksheets reflect the actual evidence/reporting worksheets while removing client identifiers.
+6. Confirm the SharePoint reconstruction reflects the documented evidence-category and reference-resource architecture without pretending to be an original screenshot.
+7. Confirm the primary visuals are distinct enough and do not feel repetitive.
+8. Correct only issues Samantha identifies in this Safety review.
+9. Once Samantha approves Safety, move to Contract Fundamentals.
 
 ---
 
