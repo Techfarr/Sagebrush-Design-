@@ -544,10 +544,10 @@ Launch only after Samantha approves:
 | ID | Area | Status | Current issue / next action |
 |---|---|---|---|
 | PLAN-01 | Rebuild control plan | DONE | Use this file before every website task. |
-| H-01 | Home hero | LOCKED | No redesign. |
-| H-02 | Home proof stats | REVIEW NEEDED | Claim/source check. |
+| H-01 | Home hero | REVIEW NEEDED | User explicitly reopened spacing/alignment only; hero card moved left while headline, image direction, and positioning remain unchanged. |
+| H-02 | Home proof band | REVIEW NEEDED | Revised to experience + principal-led strategy-to-build + enterprise scale; Samantha review required. |
 | H-03 | Problems section | LOCKED | Copy QA later. |
-| H-04 | Featured Work | REVIEW NEEDED | Three distinct source-faithful Safety visuals are now in place: Rise, ILT, and QRG. Samantha review required. |
+| H-04 | Featured Work | REVIEW NEEDED | Three distinct source-faithful Safety visuals are in place; top spacing tightened based on Samantha review. |
 | H-05 | Agriculture | REVIEW NEEDED | Visual/copy review later. |
 | H-06 | Process | LOCKED | Copy QA later. |
 | H-07 | About | INCOMPLETE | Add real working-context portrait. |
