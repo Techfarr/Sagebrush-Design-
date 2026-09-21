@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="850" height="1100" viewBox="0 0 850 1100">
+<rect width="850" height="1100" fill="#FFFFFF"/>
+<rect x="40" y="35" width="770" height="1030" fill="none" stroke="#D5CCBE"/>
+<text x="58" y="82" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="700" fill="#2B3430">Safety Investigation Case Study</text>
+<text x="58" y="126" font-family="Arial,Helvetica,sans-serif" font-size="34" font-weight="700" fill="#71806C">Report Writing</text>
+<rect x="58" y="142" width="734" height="3" fill="#71806C"/>
+
+<rect x="58" y="178" width="734" height="74" fill="#F3F1EC"/>
+<text x="76" y="205" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="700" fill="#2B3430">GROUP NUMBER</text>
+<text x="310" y="205" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="700" fill="#2B3430">DATE</text>
+<text x="520" y="205" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="700" fill="#2B3430">MEMBERS</text>
+
+<text x="58" y="292" font-family="Arial,Helvetica,sans-serif" font-size="15" fill="#2B3430">Use only what your group documented and verified to write your report.</text>
+<text x="58" y="334" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="700" fill="#2B3430">Build the narrative from the 5 W's</text>
+<g font-family="Arial,Helvetica,sans-serif" font-size="14" fill="#52615A">
+<circle cx="70" cy="369" r="4" fill="#B86448"/><text x="86" y="375">Start with WHO, WHAT, WHEN, and WHERE.</text>
+<circle cx="70" cy="402" r="4" fill="#B86448"/><text x="86" y="408">HOW is the sequence of events. Write it in chronological order.</text>
+<circle cx="70" cy="435" r="4" fill="#B86448"/><text x="86" y="441">WHY goes only as far as the evidence supports.</text>
+<circle cx="70" cy="468" r="4" fill="#B86448"/><text x="86" y="474">Attribute statements as statements. Do not turn claims into facts.</text>
+</g>
+
+<rect x="58" y="520" width="734" height="38" fill="#5E6D59"/>
+<text x="74" y="545" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="700" fill="#FFFFFF">INJURY REPORT · INITIAL</text>
+<text x="58" y="600" font-family="Arial,Helvetica,sans-serif" font-size="16" font-weight="700" fill="#2B3430">Description of Injury Incident</text>
+<g stroke="#D5CCBE"><line x1="58" y1="642" x2="792" y2="642"/><line x1="58" y1="682" x2="792" y2="682"/><line x1="58" y1="722" x2="792" y2="722"/><line x1="58" y1="762" x2="792" y2="762"/></g>
+
+<rect x="58" y="818" width="734" height="38" fill="#B86448"/>
+<text x="74" y="843" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="700" fill="#FFFFFF">BEFORE YOU SUBMIT</text>
+<text x="58" y="896" font-family="Arial,Helvetica,sans-serif" font-size="14" fill="#52615A">Read the draft back against the evidence your group documented.</text>
+<text x="58" y="921" font-family="Arial,Helvetica,sans-serif" font-size="14" fill="#52615A">Every claim should trace to a verified fact or be clearly identified as a statement or still under review.</text>
+
+<text x="58" y="995" font-family="Arial,Helvetica,sans-serif" font-size="13" font-style="italic" fill="#71806C">Sanitized public reconstruction of the learner worksheet structure.</text>
+</svg>
