@@ -39,7 +39,8 @@ function renderFeatured() {
     <div class="cta">
       ${p.caseStudy ? `<button type="button" class="btn" data-case="${esc(p.id)}" aria-haspopup="dialog">View Case Study</button>` : ""}
       ${p.portfolioUrl ? `<a class="btn-ghost" href="${esc(p.portfolioUrl)}">Explore Portfolio Sample&nbsp;→</a>` : ""}
-      ${isAdb ? `<a class="btn-ghost" href="${esc(p.externalUrl)}" target="_blank" rel="noopener" data-adb-demo>Try a Dirt Buster&nbsp;↗</a>` : ""}
+      ${isAdb ? `<a class="btn-ghost" href="${esc(p.externalUrl)}" target="_blank" rel="noopener" data-adb-demo>Visit Ag Dirt Busters&nbsp;↗</a>` : ""}
+      ${isAdb ? (p.lessonLinks || []).map(link => `<a class="link-u" href="${esc(link.url)}" target="_blank" rel="noopener" data-adb-demo>${esc(link.title)}&nbsp;↗</a>`).join("") : ""}
     </div>
   </article>
 </section>`;
