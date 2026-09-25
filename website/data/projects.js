@@ -156,18 +156,18 @@ export const projects = [
     ],
     "context": "Public education \u00b7 digital product",
     "industry": "Agriculture / public education",
-    "problem": "Connecting interactive lessons, a public website, and private reporting",
-    "summary": "A growing Sagebrush Design product built from concept through delivery, with two lessons currently available: Chocolate Milk and Food From the Store. Illustrated interactions and evidence-based explanations serve kids and grown-ups. The public website connects visitors to the expanding lesson collection and event inquiries; a private dashboard brings learning activity and feedback into one reporting view.",
-    "challenge": "Agriculture questions need more than a wall of facts. The experience needed to invite curiosity, let learners test their thinking, and make supporting sources easy to find. Event reporting also needed to distinguish learner activity from page views.",
+    "problem": "Turning everyday agriculture questions into interactive learning",
+    "summary": "Sagebrush Design created Ag Dirt Busters from concept through delivery: a growing collection of illustrated lessons supported by a public website and private reporting. The two current lessons, Chocolate Milk and Food From the Store, invite kids and grown-ups to test a belief, explore the evidence, and reconsider their answer.",
+    "challenge": "Everyday agriculture misconceptions needed an inviting way into evidence-based learning. The experience had to support kids and grown-ups, work for individuals and events, and connect learning activity with useful reporting as the lesson collection grows.",
     "role": [
       "Owned the product concept, learning strategy, brand, and content.",
       "Designed the illustrated lessons, public website, and event inquiry experience.",
       "Developed private reporting for learner sessions, engagement, event activity, and feedback."
     ],
     "decisions": [
-      "Used a predict, explore, and check sequence with separate kid and grown-up experiences.",
-      "Connected the public website directly to the current lessons, with one shared event inquiry form and room for the collection to grow.",
-      "Kept reporting private, with filters for lesson, event, experience, source, and date."
+      "Used a predict, explore, and check sequence so learners work with an idea before reviewing the explanation.",
+      "Connected the growing lesson collection through a public website with direct lesson access and a shared event inquiry form.",
+      "Separated session-level reporting from page views, with lesson and event filters and optional learner feedback."
     ],
     "outcome": [
       "A growing lesson collection, currently featuring Chocolate Milk and Food From the Store.",
@@ -175,9 +175,9 @@ export const projects = [
       "A working private dashboard includes Overview, Event Report, Feedback, and Myth Submissions. Screenshot values illustrate the reporting interface; they are not presented as verified learning-impact results."
     ],
     "proof": [
-      "A growing collection of illustrated, interactive lessons for kids and grown-ups, with two currently available.",
-      "Public website with direct lesson access and a shared inquiry form.",
-      "Private dashboard for participation, engagement, event reporting, and learner feedback."
+      "Designed separate kid and grown-up experiences around prediction, exploration, and reflection.",
+      "Connected lesson discovery, supporting resources, and event inquiries through one public website.",
+      "Brought learner activity, event reporting, feedback, and submitted questions into a private dashboard."
     ],
     "tags": [
       "Interactive learning",
@@ -187,6 +187,17 @@ export const projects = [
       "Learner feedback"
     ],
     "evidence": [
+      {
+        "type": "Public website",
+        "title": "Explore the growing lesson collection",
+        "description": "The refreshed website connects visitors to the current lessons: Chocolate Milk and Food From the Store.",
+        "slot": "adb-website",
+        "src": "assets/projects/ag-dirt-busters/public-website.jpg",
+        "fit": "contain",
+        "alt": "Ag Dirt Busters website with Chocolate Milk and Food From the Store topic choices and a brown cow illustration.",
+        "seeing": "The published Ag Dirt Busters website, with direct lesson access and an event inquiry action.",
+        "why": "The public website makes the growing lesson collection approachable and gives potential event hosts a clear inquiry path."
+      },
       {
         "type": "Private reporting",
         "title": "Dashboard overview",
@@ -199,19 +210,8 @@ export const projects = [
         "why": "Reporting brings learner sessions, answers, and engagement together while keeping page views separate from participant counts."
       },
       {
-        "type": "Public website",
-        "title": "Explore the growing lesson collection",
-        "description": "The refreshed website connects visitors to the current lessons: Chocolate Milk and Food From the Store.",
-        "slot": "adb-website",
-        "src": "assets/projects/ag-dirt-busters/public-website.jpg",
-        "fit": "contain",
-        "alt": "Ag Dirt Busters website with Chocolate Milk and Food From the Store topic choices and a brown cow illustration.",
-        "seeing": "The published Ag Dirt Busters website, with direct lesson access and an event inquiry action.",
-        "why": "Visitors can try a lesson or ask about using the experience with their audience without needing a learner account."
-      },
-      {
         "type": "Learner feedback",
-        "title": "Usefulness, confidence, and recommendation",
+        "title": "Learner feedback",
         "description": "Actual feedback screenshot showing response counts, response rate, and answer distributions.",
         "slot": "adb-feedback",
         "src": "assets/projects/ag-dirt-busters/dashboard-feedback.png",
