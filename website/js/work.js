@@ -39,7 +39,8 @@ function renderFeatured() {
     <div class="cta">
       ${p.caseStudy ? `<button type="button" class="btn" data-case="${esc(p.id)}" aria-haspopup="dialog">View Case Study</button>` : ""}
       ${p.portfolioUrl ? `<a class="btn-ghost" href="${esc(p.portfolioUrl)}">Explore Portfolio Sample&nbsp;→</a>` : ""}
-      ${isAdb ? `<a class="btn-ghost" href="${esc(p.externalUrl)}" target="_blank" rel="noopener" data-adb-demo>Try a Dirt Buster&nbsp;↗</a>` : ""}
+      ${isAdb ? `<a class="btn-ghost" href="${esc(p.externalUrl)}" target="_blank" rel="noopener" data-adb-demo>Visit Ag Dirt Busters&nbsp;↗</a>` : ""}
+      ${isAdb ? (p.lessonLinks || []).map(link => `<a class="link-u" href="${esc(link.url)}" target="_blank" rel="noopener" data-adb-demo>${esc(link.title)}&nbsp;↗</a>`).join("") : ""}
     </div>
   </article>
 </section>`;
@@ -85,7 +86,7 @@ function fillCase(p) {
   q("[data-cs-challenge]").textContent = p.challenge || p.summary;
   q("[data-cs-role]").innerHTML = (p.role || []).slice(0, 3).map(r => `<li>${esc(r)}</li>`).join("");
   q("[data-cs-decisions]").innerHTML = (p.decisions || []).slice(0, 3).map(d => `<li>${esc(d)}</li>`).join("");
-  q("[data-cs-evidence]").innerHTML = (p.evidence || []).slice(0, 4).map((e, k) => `
+  q("[data-cs-evidence]").innerHTML = (p.evidence || []).slice(0, p.id === "ag-dirt-busters" ? undefined : 4).map((e, k) => `
     <button type="button" class="ev-card" data-pid="${esc(p.id)}" data-eidx="${k}" aria-haspopup="dialog">
       ${media(e, e.title)}
       <span class="meta"><span class="type">${esc(e.type)}</span><span class="name">${esc(e.title)}</span></span>
@@ -126,3 +127,4 @@ document.addEventListener("click", e => {
 });
 
 renderFilters(); renderFeatured(); renderSupporting(); wireCommon(); syncHash();
+
