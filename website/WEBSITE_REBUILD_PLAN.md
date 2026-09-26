@@ -47,18 +47,6 @@ These rules are locked unless Samantha explicitly reopens them.
    - What the next task is.
 7. If a requested edit conflicts with a locked decision, flag the conflict before changing it.
 
-### 2.1A Visual review and deployment workflow
-This rule applies to all remaining website visual work.
-
-1. **Design locally first.** Build and refine HTML/CSS locally before changing the repository.
-2. **Do not use Netlify as a sketchpad.** Spacing, framing, card-height, alignment, crop, and similar visual corrections are reviewed locally first.
-3. **Batch section changes.** Make all related corrections for the active section together rather than committing one micro-edit at a time.
-4. **Render before deployment.** Check the section locally at desktop, tablet, and mobile sizes before pushing.
-5. **One review deployment per approved section whenever practical.** Push a consolidated update only after the local direction is approved.
-6. **Use Netlify for final browser QA.** Netlify is for confirming the approved implementation in the real site, not for discovering basic layout problems.
-7. **Comparable card sets use consistent outer dimensions.** When three or more portfolio/evidence cards appear together, use equal card heights and equal artifact-stage heights unless the design specifically calls for a different hierarchy.
-8. **Preserve native artifact proportions.** Screens, slides, documents, worksheets, and other deliverables stay at their real aspect ratio inside the common stage. Never crop, stretch, or reshape an artifact just to make cards line up.
-9. **Different artifact types may look different inside the same frame.** A portrait document should still read as a portrait document; a slide should still read as a slide. Consistency comes from the surrounding frame and card, not from distorting the work.
 
 ### 2.2 Portfolio visual fidelity
 For real client work, the actual deliverable is the visual source of truth.
@@ -560,7 +548,6 @@ Launch only after Samantha approves:
 | H-01 | Home hero | REVIEW NEEDED | User explicitly reopened spacing/alignment only; hero card moved left while headline, image direction, and positioning remain unchanged. |
 | H-02 | Home proof band | REVIEW NEEDED | Revised to experience + principal-led strategy-to-build + enterprise scale; Samantha review required. |
 | H-03 | Problems section | LOCKED | Copy QA later. |
-| H-04 | Featured Work | REVIEW NEEDED | Equal-height card layout approved locally; one consolidated site update applied. Final browser QA only. |
 | H-05 | Agriculture | REVIEW NEEDED | Visual/copy review later. |
 | H-06 | Process | LOCKED | Copy QA later. |
 | H-07 | About | INCOMPLETE | Add real working-context portrait. |

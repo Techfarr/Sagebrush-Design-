@@ -13,3 +13,5 @@
   [headers.values]
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
+    # TEMPORARY while staging on netlify.app. Remove this line at launch.
+    X-Robots-Tag = "noindex, nofollow"

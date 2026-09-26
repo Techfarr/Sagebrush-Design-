@@ -286,3 +286,9 @@ dialog::backdrop{background:rgba(31,40,37,.78)}
   .validation .act{justify-content:start}
 }
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none !important;animation:none !important}}
+
+/* Evidence cards: let the description absorb the height difference so the
+   "View evidence" link sits on a common baseline instead of leaving a block
+   of empty card below it. */
+.ecard{align-content:stretch;grid-template-rows:auto 1fr}
+.ecard .body{align-content:stretch;grid-template-rows:auto auto 1fr auto}
