@@ -102,7 +102,7 @@ dialog::backdrop{background:rgba(31,40,37,.78)}
 /* Home */
 .hero{background:var(--ink-deep);color:var(--cream);position:relative;overflow:hidden;min-height:640px;display:grid}
 .hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.hero .wrap{position:relative;width:100%;padding-top:72px;padding-bottom:96px;display:grid}
+.hero .wrap{position:relative;width:100%;max-width:none;padding:72px 24px 96px clamp(24px,5vw,76px);display:grid}
 .hero-card{background:var(--ink);padding:clamp(40px,4.5vw,64px);display:grid;gap:28px;max-width:640px;border-left:8px solid var(--clay)}
 .hero-card .eyebrow{color:var(--sand)}
 .hero-wordmark{width:210px;height:auto;margin-bottom:28px;justify-self:start}
@@ -112,7 +112,7 @@ dialog::backdrop{background:rgba(31,40,37,.78)}
 .proof{background:var(--sand)}
 .proof .wrap{padding-top:52px;padding-bottom:52px;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:32px 48px}
 .proof div{display:grid;gap:6px;border-left:4px solid var(--clay);padding-left:20px}
-.proof strong{font-family:Sora,sans-serif;font-weight:700;font-size:clamp(48px,5vw,72px);letter-spacing:-.03em;line-height:1}
+.proof strong{font-family:Sora,sans-serif;font-weight:700;font-size:clamp(48px,5vw,72px);letter-spacing:-.03em;line-height:1}.proof strong.word{font-size:clamp(32px,3.5vw,48px);line-height:1.02}
 .proof .l1{font-family:Sora,sans-serif;font-weight:600;font-size:18px}
 .proof .l2{font-size:16px}
 .section{padding-top:112px;padding-bottom:104px;display:grid;gap:64px}
@@ -124,14 +124,14 @@ dialog::backdrop{background:rgba(31,40,37,.78)}
 .problem h3{position:relative;font-family:Sora,sans-serif;font-weight:600;font-size:26px;line-height:1.15;letter-spacing:-.02em;max-width:13ch;margin-top:96px}
 .problem p{position:relative;text-wrap:pretty;font-size:18px;line-height:1.6}
 .featured{background:var(--ink);color:var(--cream)}
-.featured .wrap{padding-top:104px;padding-bottom:104px;display:grid;gap:56px}
-.featured-head{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:40px;align-items:end}
+.featured .wrap{padding-top:64px;padding-bottom:104px;display:grid;gap:48px}
+.featured-head{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:40px;align-items:start}
 .featured-head .eyebrow{color:var(--sand)}
 .featured-head .sub{display:grid;gap:22px}
 .featured-head .sub p{font-size:19px;line-height:1.6;color:var(--sand);text-wrap:pretty}
 .featured .tag{border-color:rgba(247,240,229,.4);color:var(--cream)}
-.featured .cols3{gap:20px}
-.ecard{display:grid;background:var(--cream);color:var(--ink);cursor:pointer;text-align:left;border:0;padding:0;font:inherit}
+.featured .cols3{gap:20px;align-items:start}
+.ecard{display:grid;background:var(--cream);color:var(--ink);cursor:pointer;text-align:left;border:0;padding:0;font:inherit;align-self:start;height:auto}
 .ecard:hover{box-shadow:0 0 0 3px var(--clay)}
 .ecard .media{height:240px}
 .ecard .body{padding:26px;display:grid;gap:10px}
@@ -260,6 +260,16 @@ dialog::backdrop{background:rgba(31,40,37,.78)}
 .empty button{background:none;border:0;padding:0;font-weight:600;color:var(--clay-deep);border-bottom:2px solid var(--clay-deep)}
 [hidden]{display:none !important}
 
+/* Approved Featured Work card rule — local-first review 2026-09-21.
+   Comparable evidence cards use equal outer heights and equal artifact stages.
+   Deliverables keep their native proportions inside the stage; do not crop or stretch them. */
+.featured .cols3{gap:20px;align-items:stretch}
+.ecard{grid-template-rows:210px 245px;align-self:stretch;height:455px}
+.ecard .media{height:210px;display:flex;align-items:center;justify-content:center;padding:12px;background:var(--sand)}
+.ecard .media img,.ecard .media.contain img{position:static;inset:auto;width:auto;height:auto;max-width:94%;max-height:186px;object-fit:contain;padding:0;box-shadow:0 5px 16px rgba(31,40,37,.18);background:#fff}
+.ecard .body{height:245px;padding:22px 22px 20px;display:grid;grid-template-rows:auto auto 1fr auto;gap:10px}
+.ecard .more{margin-top:0;align-self:end}
+
 /* Breakpoints */
 @media (max-width:960px){.nav-links a:not(.nav-cta){display:none}}
 @media (max-width:1100px){.adb{grid-template-columns:minmax(0,1fr)}.adb-text{padding:0 22px 22px}.adb .media{min-height:180px}}
@@ -267,6 +277,8 @@ dialog::backdrop{background:rgba(31,40,37,.78)}
 @media (max-width:900px){.feature article{grid-template-columns:minmax(0,1fr)}.feature .story,.feature .visual{grid-column:auto;grid-row:auto}}
 @media (max-width:760px){
   .nav-links a:not(.nav-cta){display:none}
+  .ecard{height:auto;grid-template-rows:210px auto}
+  .ecard .body{height:auto;min-height:220px}
   .brand img{height:52px;width:80px}
   .nav-cta{padding:10px 14px;font-size:15px}
   .cols3,.steps,.cs .two,.cs .ev-grid{grid-template-columns:minmax(0,1fr)}

@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="850" height="1100" viewBox="0 0 850 1100">
+<rect width="850" height="1100" fill="#FFFFFF"/>
+<rect x="40" y="35" width="770" height="1030" fill="none" stroke="#D5CCBE"/>
+<text x="58" y="82" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="700" fill="#2B3430">Safety Investigation Case Study</text>
+<text x="58" y="126" font-family="Arial,Helvetica,sans-serif" font-size="34" font-weight="700" fill="#71806C">Physical Evidence</text>
+<rect x="58" y="142" width="734" height="3" fill="#71806C"/>
+<text x="58" y="180" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="700" fill="#2B3430">Photographs</text>
+<text x="58" y="211" font-family="Arial,Helvetica,sans-serif" font-size="14" fill="#52615A">Document what you observe in each photograph. Classify the evidence type.</text>
+<text x="58" y="232" font-family="Arial,Helvetica,sans-serif" font-size="14" fill="#52615A">Note what each photograph raises that other evidence will need to answer.</text>
+
+<rect x="58" y="262" width="734" height="48" fill="#5E6D59"/>
+<g font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="700" fill="#FFFFFF">
+<text x="72" y="282">IMAGE</text><text x="72" y="298">(name or number)</text>
+<text x="195" y="288">EVIDENCE TYPE</text>
+<text x="382" y="282">OBSERVATIONS</text><text x="382" y="298">(what you see, not what you think happened)</text>
+<text x="610" y="282">WHAT DOES THIS RAISE</text><text x="610" y="298">THAT STILL NEEDS ANSWERING?</text>
+</g>
+<g stroke="#D5CCBE" fill="#FFFFFF">
+<rect x="58" y="310" width="734" height="86"/><rect x="58" y="396" width="734" height="86"/><rect x="58" y="482" width="734" height="86"/><rect x="58" y="568" width="734" height="86"/><rect x="58" y="654" width="734" height="86"/>
+<line x1="178" y1="262" x2="178" y2="740"/><line x1="355" y1="262" x2="355" y2="740"/><line x1="598" y1="262" x2="598" y2="740"/>
+</g>
+<g font-family="Arial,Helvetica,sans-serif" font-size="12" fill="#2B3430">
+<text x="194" y="335">☐ Direct</text><text x="194" y="354">☐ Circumstantial</text><text x="194" y="373">☐ Unclear</text>
+<text x="194" y="421">☐ Direct</text><text x="194" y="440">☐ Circumstantial</text><text x="194" y="459">☐ Unclear</text>
+<text x="194" y="507">☐ Direct</text><text x="194" y="526">☐ Circumstantial</text><text x="194" y="545">☐ Unclear</text>
+<text x="194" y="593">☐ Direct</text><text x="194" y="612">☐ Circumstantial</text><text x="194" y="631">☐ Unclear</text>
+<text x="194" y="679">☐ Direct</text><text x="194" y="698">☐ Circumstantial</text><text x="194" y="717">☐ Unclear</text>
+</g>
+
+<text x="58" y="790" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="700" fill="#2B3430">Looking across the photographs, what is the single most important thing they do not tell you?</text>
+<text x="58" y="814" font-family="Arial,Helvetica,sans-serif" font-size="14" fill="#52615A">What other image or evidence would you want before writing your report?</text>
+<rect x="58" y="846" width="734" height="34" fill="#B86448"/>
+<text x="72" y="868" font-family="Arial,Helvetica,sans-serif" font-size="12" font-weight="700" fill="#FFFFFF">YOUR NOTES</text>
+<g stroke="#D5CCBE"><line x1="58" y1="914" x2="792" y2="914"/><line x1="58" y1="950" x2="792" y2="950"/><line x1="58" y1="986" x2="792" y2="986"/></g>
+</svg>

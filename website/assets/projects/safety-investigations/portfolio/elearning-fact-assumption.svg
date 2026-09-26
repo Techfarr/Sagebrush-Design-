@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900">
+<rect width="1200" height="900" fill="#F7F0E5"/>
+<rect x="120" y="38" width="960" height="824" fill="#FFFFFF"/>
+
+<text x="185" y="96" font-family="Arial,Helvetica,sans-serif" font-size="16" fill="#71806C">Lesson 5 of 11</text>
+<text x="185" y="145" font-family="Arial,Helvetica,sans-serif" font-size="38" font-weight="700" fill="#2B3430">Facts First - Avoiding Assumptions</text>
+<rect x="185" y="174" width="92" height="5" fill="#B86448"/>
+
+<text x="185" y="246" font-family="Arial,Helvetica,sans-serif" font-size="30" font-weight="700" fill="#2B3430">Is it a Fact or Assumption</text>
+<text x="185" y="284" font-family="Arial,Helvetica,sans-serif" font-size="17" fill="#52615A">Sort each statement into Fact or Assumption.</text>
+
+<!-- Statement cards -->
+<rect x="230" y="345" width="330" height="132" rx="4" fill="#FFFFFF" stroke="#D5CCBE"/>
+<rect x="230" y="345" width="330" height="5" fill="#71806C"/>
+<text x="395" y="397" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="700" fill="#2B3430">Camera footage shows the</text>
+<text x="395" y="425" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="700" fill="#2B3430">equipment stopped at 10:24.</text>
+
+<rect x="640" y="345" width="330" height="132" rx="4" fill="#FFFFFF" stroke="#D5CCBE"/>
+<rect x="640" y="345" width="330" height="5" fill="#71806C"/>
+<text x="805" y="397" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="700" fill="#2B3430">The employee stated they</text>
+<text x="805" y="425" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="700" fill="#2B3430">completed the inspection.</text>
+
+<!-- Sorting destinations together at the bottom -->
+<rect x="230" y="610" width="330" height="118" rx="4" fill="#F3F1EC" stroke="#D5CCBE" stroke-width="2"/>
+<text x="395" y="663" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="23" font-weight="700" fill="#71806C">FACT</text>
+<text x="395" y="694" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="15" fill="#52615A">Can be verified by evidence</text>
+
+<rect x="640" y="610" width="330" height="118" rx="4" fill="#F3F1EC" stroke="#D5CCBE" stroke-width="2"/>
+<text x="805" y="663" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="23" font-weight="700" fill="#B86448">ASSUMPTION</text>
+<text x="805" y="694" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="15" fill="#52615A">Not yet verified by evidence</text>
+</svg>
