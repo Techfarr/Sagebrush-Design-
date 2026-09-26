@@ -40,7 +40,4 @@ if (adb) {
   const live = document.querySelector("[data-adb-live]"); live.href = adb.externalUrl;
 }
 
-const form = document.getElementById("contact-form");
-if (form) form.addEventListener("submit", e => { e.preventDefault(); track("contact_submit", { form: "placeholder" }); });
-
 wireCommon();

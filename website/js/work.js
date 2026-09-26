@@ -59,7 +59,7 @@ function renderSupporting() {
     <h3>${esc(s.title)}</h3>
     <p>${esc(s.summary)}</p>
   </div>
-  ${media(e0, e0.title + " — diagram")}
+  ${e0.src ? media(e0, e0.title + " — diagram") : ""}
   <div class="tags">${(s.tags || []).slice(0, 3).map(t => `<span class="tag">${esc(t)}</span>`).join("")}</div>
 </article>`;
   }).join("");

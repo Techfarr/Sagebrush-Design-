@@ -1,0 +1,13 @@
+/* Shared portfolio shell. Individual learning activities retain their own design. */
+:root{--ink:#2B3430;--navy:#2B3430;--sage:#71806C;--clay:#B86448;--cream:#F7F0E5;--sand:#D9C6AE}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{background:var(--cream);color:var(--ink)}
+.top,.footer{background:var(--ink);color:var(--cream)}
+.top a,.footer a{color:var(--cream)}
+.nav{background:var(--cream);border-color:var(--sand)}
+.nav a.active,.nav a[aria-current]{background:var(--ink);color:var(--cream)}
+main{min-width:0}.layout{min-width:0}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var(--clay);outline-offset:4px}
+iframe{max-width:100%}
+@media(max-width:600px){.top{padding:16px;gap:12px}.site-nav{gap:14px;flex-wrap:wrap}.site-nav a{min-height:32px;display:inline-flex;align-items:center}.hero,.section{padding-left:20px;padding-right:20px}h1{overflow-wrap:break-word}.nav{max-width:100vw}.grid2,.grid3{grid-template-columns:1fr}.footer{padding:28px 20px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
