@@ -147,52 +147,119 @@ export const projects = [
     caseStudy: true
   },
   {
-    id: "ag-dirt-busters",
-    title: "Ag Dirt Busters",
-    category: "Agriculture",
-    categories: ["Agriculture", "Digital Learning"],
-    context: "Public education · pilot",
-    industry: "Agriculture / public education",
-    problem: "Challenging common agriculture myths with an owned public-education product",
-    summary: "A Sagebrush Design initiative built end to end: concept, learning strategy, brand, content, web experience, interaction design, SEO, and analytics/CRM planning. Live at agdirtbusters.com and in pilot.",
-    challenge: "Common myths about agriculture spread faster than the facts, and most correction arrives as text nobody reads. The goal was a quick, evidence-based interaction that works on a phone at an event as well as on a kiosk or a laptop.",
-    role: [
-      "Owner: concept, learning strategy, brand, and content.",
-      "Designed and built the web experience and interactions.",
-      "Planned SEO, analytics, and CRM follow-up for the pilot."
+    "id": "ag-dirt-busters",
+    "title": "Ag Dirt Busters",
+    "category": "Agriculture",
+    "categories": [
+      "Agriculture",
+      "Digital Learning"
     ],
-    decisions: [
-      "One myth, one decision, one evidence-based answer — no lesson to complete.",
-      "Designed mobile- and QR-first so the same experience works at events, kiosks, and on the web.",
-      "Set up pilot measurement before promoting the product, so results are real rather than assumed."
+    "context": "Public education \u00b7 digital product",
+    "industry": "Agriculture / public education",
+    "problem": "Turning everyday agriculture questions into interactive learning",
+    "summary": "Sagebrush Design created Ag Dirt Busters from concept through delivery: a growing collection of illustrated lessons supported by a public website and private reporting. The two current lessons, Chocolate Milk and Food From the Store, invite kids and grown-ups to test a belief, explore the evidence, and reconsider their answer.",
+    "challenge": "Everyday agriculture misconceptions needed an inviting way into evidence-based learning. The experience had to support kids and grown-ups, work for individuals and events, and connect learning activity with useful reporting as the lesson collection grows.",
+    "role": [
+      "Owned the product concept, learning strategy, brand, and content.",
+      "Designed the illustrated lessons, public website, and event inquiry experience.",
+      "Developed private reporting for learner sessions, engagement, event activity, and feedback."
     ],
-    outcome: [
-      "Live at agdirtbusters.com and in pilot.",
-      "Performance metrics will be published once real pilot data is collected — no demo data is shown as results."
+    "decisions": [
+      "Used a predict, explore, and check sequence so learners work with an idea before reviewing the explanation.",
+      "Connected the growing lesson collection through a public website with direct lesson access and a shared event inquiry form.",
+      "Separated session-level reporting from page views, with lesson and event filters and optional learner feedback."
     ],
-    proof: [
-      "Owned the concept, learning strategy, brand, and digital experience.",
-      "Designed for mobile, QR, kiosk, and event-use contexts.",
-      "Built a path toward pilot testing, analytics, and CRM follow-up."
+    "outcome": [
+      "A growing lesson collection, currently featuring Chocolate Milk and Food From the Store.",
+      "A refreshed public website connects lesson discovery, resources, and event inquiries.",
+      "A working private dashboard includes Overview, Event Report, Feedback, and Myth Submissions. Screenshot values illustrate the reporting interface; they are not presented as verified learning-impact results."
     ],
-    tags: ["Agriculture", "Digital product", "Interactive learning", "Web", "AI-supported development"],
-    evidence: [
-      { type: "Product", title: "Interactive learning experience", description: "How myths are presented and challenged on the public site.", slot: "adb-interaction", src: "assets/images/ag-dirt-busters-logo.png", fit: "contain",
-        seeing: "Placeholder: replace with a real screenshot of one myth interaction from agdirtbusters.com.",
-        why: "A visitor should be able to answer one myth in under a minute, then leave with the evidence." },
-      { type: "System", title: "Web + analytics flow", description: "How the public experience connects to measurement and follow-up.", slot: "adb-flow",
-        seeing: "A diagram of the path from QR or search to interaction, event tracking, and CRM follow-up.",
-        why: "Measurement was designed in from the start so pilot results are real data, not assumptions." },
-      { type: "Process", title: "Concept to pilot", description: "The product path from idea through pilot readiness.", slot: "adb-roadmap",
-        seeing: "The concept-to-pilot roadmap.",
-        why: "Shipping a small, measurable pilot beats a large launch with no data." }
+    "proof": [
+      "Designed separate kid and grown-up experiences around prediction, exploration, and reflection.",
+      "Connected lesson discovery, supporting resources, and event inquiries through one public website.",
+      "Brought learner activity, event reporting, feedback, and submitted questions into a private dashboard."
     ],
-    validation: null,
-    externalUrl: "https://www.agdirtbusters.com",
-    theme: "clay",
-    homeVisibility: "callout",
-    workVisibility: "featured",
-    caseStudy: true
+    "tags": [
+      "Interactive learning",
+      "Product design",
+      "Website",
+      "Private reporting",
+      "Learner feedback"
+    ],
+    "evidence": [
+      {
+        "type": "Public website",
+        "title": "Explore the growing lesson collection",
+        "description": "The refreshed website connects visitors to the current lessons: Chocolate Milk and Food From the Store.",
+        "slot": "adb-website",
+        "src": "assets/projects/ag-dirt-busters/public-website.jpg",
+        "fit": "contain",
+        "alt": "Ag Dirt Busters website with Chocolate Milk and Food From the Store topic choices and a brown cow illustration.",
+        "seeing": "The published Ag Dirt Busters website, with direct lesson access and an event inquiry action.",
+        "why": "The public website makes the growing lesson collection approachable and gives potential event hosts a clear inquiry path."
+      },
+      {
+        "type": "Private reporting",
+        "title": "Dashboard overview",
+        "description": "Actual dashboard screenshot showing participation, answer distributions, completion, and engagement.",
+        "slot": "adb-dashboard",
+        "src": "assets/projects/ag-dirt-busters/dashboard-overview.png",
+        "fit": "contain",
+        "alt": "Ag Dirt Busters private dashboard overview with filters, metric cards, answer charts, and event summary.",
+        "seeing": "An actual overview screenshot supplied by the product owner on September 25, 2026. Values shown are a point-in-time interface example, not verified outcome claims.",
+        "why": "Reporting brings learner sessions, answers, and engagement together while keeping page views separate from participant counts."
+      },
+      {
+        "type": "Learner feedback",
+        "title": "Learner feedback",
+        "description": "Actual feedback screenshot showing response counts, response rate, and answer distributions.",
+        "slot": "adb-feedback",
+        "src": "assets/projects/ag-dirt-busters/dashboard-feedback.png",
+        "fit": "contain",
+        "alt": "Ag Dirt Busters Feedback tab with response rate and charts for usefulness, explanation confidence, and recommendation.",
+        "seeing": "An actual Feedback tab screenshot supplied by the product owner on September 25, 2026. It shows collected responses and the comments area.",
+        "why": "Learner feedback gives the product owner another source of evidence for review. These responses are not a measure of long-term behavior change."
+      },
+      {
+        "type": "Private reporting",
+        "title": "Event reporting",
+        "description": "Dashboard sample showing event filters, reporting metrics, and the Print / Save PDF action.",
+        "slot": "adb-event-report",
+        "src": "assets/projects/ag-dirt-busters/dashboard-event-report.png",
+        "fit": "contain",
+        "alt": "Ag Dirt Busters dashboard Event reporting view.",
+        "seeing": "The Event Report view before an event is selected, with session metrics and source and audience breakdowns visible.",
+        "why": "Event reporting supports review of how the experience is used in different settings."
+      },
+      {
+        "type": "Private reporting",
+        "title": "Myth submissions",
+        "description": "Dashboard sample showing the read-only question submission view.",
+        "slot": "adb-myth-submissions",
+        "src": "assets/projects/ag-dirt-busters/dashboard-myth-submissions.png",
+        "fit": "contain",
+        "alt": "Ag Dirt Busters dashboard Myth submissions view.",
+        "seeing": "The Myth Submissions view with test entries demonstrating the table layout. These entries are sample data, not published learner stories.",
+        "why": "Submitted questions can inform future topics as the lesson collection grows."
+      }
+    ],
+    "validation": null,
+    "externalUrl": "https://agdirtbusters.com/",
+    "lessonLinks": [
+      {
+        "title": "Try Chocolate Milk",
+        "url": "https://agdirtbusters-chocolatemilkedition.netlify.app/?source=sagebrush"
+      },
+      {
+        "title": "Try Food From the Store",
+        "url": "https://agdirtbusters-foodfromthestore.netlify.app/?source=sagebrush"
+      }
+    ],
+    "theme": "clay",
+    "homeVisibility": "callout",
+    "workVisibility": "featured",
+    "caseStudy": true,
+    "portfolioUrl": "samples/ag-dirt-busters/index.html"
   },
   {
     id: "contract-fundamentals",
@@ -306,3 +373,4 @@ export const featured = () => projects.filter(p => p.workVisibility === "feature
 export const supporting = () => projects.filter(p => p.workVisibility === "supporting");
 export const withCaseStudy = () => projects.filter(p => p.caseStudy);
 export const byId = id => projects.find(p => p.id === id);
+
